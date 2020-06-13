@@ -1,4 +1,9 @@
 ```
+rpm -qa --changelog centmin-libatomic_ops
+* Sat Jun 13 2020 George Liu <centminmod.com> 7.6.10
+- libatomic_ops-7.6.10 for centminmod.com LEMP stack libatomic_ops-7.6.10
+```
+```
 yum -q info centmin-libatomic_ops-7.6.10
 Installed Packages
 Name        : centmin-libatomic_ops
