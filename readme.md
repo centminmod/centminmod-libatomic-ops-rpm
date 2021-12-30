@@ -22,6 +22,16 @@ Description : libatomic_ops-7.6.12 for centminmod.com LEMP stacks
 For PREFIX=/usr/local/nginx-dep version
 
 ```
+PKG_CONFIG_PATH='/usr/local/nginx-dep/lib/pkgconfig/' pkg-config atomic_ops --libs
+-L/usr/local/nginx-dep/lib -latomic_ops  
+
+PKG_CONFIG_PATH='/usr/local/nginx-dep/lib/pkgconfig/' pkg-config atomic_ops --cflags
+-I/usr/local/nginx-dep/include  
+
+PKG_CONFIG_PATH='/usr/local/nginx-dep/lib/pkgconfig/' pkg-config --modversion  atomic_ops
+7.6.12
+```
+```
 rpm -ql centmin-libatomic_ops-7.6.12
 /usr/local/nginx-dep/include/atomic_ops.h
 /usr/local/nginx-dep/include/atomic_ops/ao_version.h
@@ -104,6 +114,16 @@ rpm -ql centmin-libatomic_ops-7.6.12
 
 For PREFIX=/usr/local version
 
+```
+PKG_CONFIG_PATH='/usr/local/lib/pkgconfig/' pkg-config atomic_ops --libs
+-L/usr/local/lib -latomic_ops  
+
+PKG_CONFIG_PATH='/usr/local/lib/pkgconfig/' pkg-config atomic_ops --cflags
+-I/usr/local/include  
+
+PKG_CONFIG_PATH='/usr/local/lib/pkgconfig/' pkg-config --modversion  atomic_ops
+7.6.12
+```
 ```
 rpm -ql centmin-libatomic_ops-7.6.12
 /usr/local/include/atomic_ops.h
